@@ -5,16 +5,21 @@
   <title>Test Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      text-align: center;
-      background: #f0f8ff;
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     button {
       padding: 10px 20px;
       font-size: 16px;
-      background: #007acc;
+      background: #007bff;
       color: white;
       border: none;
       border-radius: 5px;
@@ -24,12 +29,6 @@
 <body>
   <h1>Hello from GitHub Pages!</h1>
   <p>This is a test page loaded inside your Ionic Cordova app.</p>
-  <button id="testBtn">Click Me</button>
-
-  <script>
-    document.getElementById('testBtn').addEventListener('click', function () {
-      alert('It works!');
-    });
-  </script>
+  <button>Click Me</button>
 </body>
 </html>
